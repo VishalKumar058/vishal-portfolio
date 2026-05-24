@@ -170,6 +170,282 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
+/* ===========================================================
+   HACKATHONS - SKETCH STYLE
+=========================================================== */
+
+#hackathons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:60px;
+}
+
+.hackathon-container{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    width:100%;
+    align-items:center;
+}
+
+.hackathon-item{
+    width:90%;
+    max-width:1300px;
+
+    background:#0f0f0f;
+    border-radius:22px;
+    padding:35px;
+
+    border:1px solid rgba(92,255,141,.10);
+
+    box-shadow:
+        0 0 25px rgba(92,255,141,.08);
+
+    transition:.35s;
+}
+
+.hackathon-item:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 0 30px rgba(92,255,141,.18);
+}
+
+/* TOP */
+.hackathon-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.hackathon-header h3{
+    font-size:38px;
+    color:#fff;
+    margin:0;
+}
+
+
+/* MIDDLE */
+
+.hackathon-body{
+    display:flex;
+    gap:35px;
+    align-items:flex-start;
+}
+
+.hackathon-body img{
+    width:240px;
+    height:240px;
+    object-fit:cover;
+    border-radius:16px;
+
+    box-shadow:
+        0 0 18px rgba(92,255,141,.12);
+}
+
+.hackathon-content{
+    flex:1;
+}
+
+.hackathon-content p{
+    font-size:18px;
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:14px;
+}
+
+.hackathon-content strong{
+    color:#fff;
+}
+
+/* BOTTOM */
+
+.hackathon-footer{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hackathon-date{
+    color:#5cff8d;
+    font-size:18px;
+    font-weight:700;
+}
+
+.hackathon-btn{
+    display:inline-block;
+    background:#5cff8d;
+    color:#000;
+
+    padding:12px 26px;
+    border-radius:10px;
+
+    text-decoration:none;
+    font-weight:700;
+    font-size:17px;
+
+    transition:.3s;
+}
+
+.hackathon-btn:hover{
+    background:#89ffb1;
+    box-shadow:
+        0 0 18px rgba(92,255,141,.45);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hackathon-header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .hackathon-body{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hackathon-body img{
+        width:100%;
+        height:auto;
+    }
+}
+
+/* ===========================================================
+   CERTIFICATES
+=========================================================== */
+/* ===========================================================
+   CERTIFICATIONS
+=========================================================== */
+
+#certification{
+    padding:0 60px 70px;
+}
+
+.certification-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.certification-card{
+    background:#111;
+    border-radius:18px;
+    padding:28px;
+
+    border:1px solid rgba(92,255,141,.08);
+
+    box-shadow:
+        0 0 12px rgba(92,255,141,.08);
+
+    transition:.35s;
+}
+
+.certification-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 0 25px rgba(92,255,141,.20);
+}
+
+.certification-card h3{
+    color:#5cff8d;
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.certification-card p{
+    color:#d7d7d7;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.cert-btn{
+    display:inline-block;
+
+    background:#5cff8d;
+    color:#000;
+
+    padding:12px 22px;
+    border-radius:10px;
+
+    text-decoration:none;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.cert-btn:hover{
+    background:#89ffb1;
+    box-shadow:
+        0 0 15px rgba(92,255,141,.45);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .certification-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* #certificates{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.activity-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+    gap:20px;
+}
+
+.activity-date{
+    color:#5cff8d;
+    font-size:14px;
+    font-weight:600;
+}
+
+.activity-content{
+    max-width:700px;
+}
+
+.certificate-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:15px;
+}
+
+.cert-btn{
+    padding:10px 18px;
+    background:#5cff8d;
+    color:#000;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.cert-btn:hover{
+    background:#89ffb1;
+    box-shadow:0 0 15px rgba(92,255,141,0.5);
+} */
+
 /* PROJECTS */
 .project-grid {
     display: grid;
@@ -208,6 +484,43 @@ footer {
     font-size: 14px;
 }
 
+
+.activity-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;   /* centers horizontally */
+    gap:30px;
+    padding:40px 20px;
+}
+
+.activity-item{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    background:#111;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+
+.activity-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(77,252,143,0.15);
+}
+
+.activity-item img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.activity-item h3{
+    color:var(--accent);
+    margin-bottom:8px;
+}
+
 /* ===========================================================
    ANIMATIONS
 =========================================================== */
@@ -237,4 +550,23 @@ footer {
 
 @keyframes blink {
     50% { border-color: transparent; }
+}
+
+
+@media(max-width:768px){
+    .activity-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .activity-item img{
+        width:100%;
+        height:auto;
+    }
+}
+
+#activities{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
